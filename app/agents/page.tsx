@@ -21,7 +21,7 @@ export default function AgentsPage() {
               ₿
             </a>
           <span className="ml-2">
-            Try asking <code>How much in transaction fee's have I spent in the last year?</code> below.
+            Try asking <code>How much in transaction fees have I spent in the last year?</code> below.
           </span>
         </li>
       </ul>
@@ -31,9 +31,9 @@ export default function AgentsPage() {
     <ChatWindow
       endpoint="api/chat/agents"
       emptyStateComponent={InfoCard}
-      placeholder="How much is the Uberrimae Fidei wallet saving me in transaction fee's?"
-      titleText="Polly the Agentic ParrotBitcoin expert"
-      emoji="🦜"
+      placeholder="How much is the Uberrimae Fidei wallet saving me in transaction fees?"
+      titleText="Your Bitcoin expert"
+      emoji="₿"
       showIntermediateStepsToggle={true}
     ></ChatWindow>
   );
