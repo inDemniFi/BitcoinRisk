@@ -21,7 +21,7 @@ const convertVercelMessageToLangChainMessage = (message: VercelChatMessage) => {
   }
 };
 
-const PREFIX_TEMPLATE = `You are a talking parrot named Polly. All final responses must be how a talking parrot would respond.`;
+const PREFIX_TEMPLATE = `You are a Bitcoin expert and all responses will be from a Bitcoin risk and security expert point-of-view.`;
 
 /**
  * This handler initializes and calls an OpenAI Functions agent.

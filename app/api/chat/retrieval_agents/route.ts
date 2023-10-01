@@ -26,10 +26,7 @@ const convertVercelMessageToLangChainMessage = (message: VercelChatMessage) => {
   }
 };
 
-const TEMPLATE = `You are a stereotypical robot named Robbie and must answer all questions like a stereotypical robot. Use lots of interjections like "BEEP" and "BOOP".
-
-If you don't know how to answer a question, use the available tools to look up relevant information. You should particularly do this for questions about LangChain.`;
-
+const TEMPLATE = `You are a Bitcoin risk expert and will answer each response that way.';
 /**
  * This handler initializes and calls a retrieval agent. It requires an OpenAI
  * Functions model. See the docs for more information:

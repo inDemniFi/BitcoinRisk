@@ -2,64 +2,91 @@ import { ChatWindow } from "@/components/ChatWindow";
 
 export default function Home() {
   const InfoCard = (
-    <div className="p-4 md:p-8 rounded bg-[#25252d] w-full max-h-[85%] overflow-hidden">
-      <h1 className="text-3xl md:text-4xl mb-4">
-        Uberrimae Fidei
+    <div className="p-4 md:p-8 rounded bg-[#25252d] w-full max-h-[85%] overflow-hidden flex items-center justify-center">
+      <h1 className="text-3xl md:text-4xl mb-2">
+        Uberrimae Fidei <br /> AI 
+        Risk Dashboard
       </h1>
       <ul>
         <li className="text-l">
-          🤝
+            <a>
+              ₿
+            </a> 
           <span className="ml-2">
-            This template showcases a simple chatbot using{" "}
+            This is a risk database and dashboard built using{" "}
             <a href="https://js.langchain.com/" target="_blank">
-              LangChain.js
+              LangChain.js, 
             </a>{" "}
-            and the Vercel{" "}
+            {" "}
             <a href="https://sdk.vercel.ai/docs" target="_blank">
-              AI SDK
+              Vercel AI SDK,
             </a>{" "}
-            in a{" "}
+            {" "}
+            <a href="https://openai.com/docs" target="_blank">
+              OpenAI,
+            </a>{" "}
+            {" "}
+            <a href="https://supabase.com/docs" target="_blank">
+              Supabase,
+            </a>{" "}
+            and {" "}
             <a href="https://nextjs.org/" target="_blank">
               Next.js
             </a>{" "}
-            project.
+            .
           </span>
         </li>
         <li className="hidden text-l md:block">
-          💻
+            <a>
+              ₿
+            </a>
           <span className="ml-2">
-            You can find the prompt and model logic for this use-case in{" "}
-            <code>app/api/chat/route.ts</code>.
+            This  will be specifically curated only to those with an{" "}
+            <code>Uberrimae Fidei wallet</code>.
           </span>
         </li>
         <li className="hidden text-l md:block">
-          🎨
+            <a>
+              ₿
+            </a>
           <span className="ml-2">
-            The main frontend logic is found in <code>app/page.tsx</code>.
+           Over time this database will be filled by Bitcoin experts and{" "}
+            <code>Uberrimae Fidei wallet holders</code>.
           </span>
         </li>
         <li className="text-l">
-          🐙
+            <a>
+              ₿
+            </a>
           <span className="ml-2">
-            This template is open source - you can see the source code and
-            deploy your own version{" "}
+            This is open source - so you can verify any details behind the scenes as you like {" "}
             <a
-              href="https://github.com/langchain-ai/langchain-nextjs-template"
+              href="https://github.com/inDemniFi/BitcoinRisk"
               target="_blank"
             >
-              from the GitHub repo
+              at our GitHub repo
             </a>
-            !
+            .
           </span>
         </li>
+        <li className="hidden text-l md:block">
+            <a>
+              ₿
+            </a>
+          <span className="ml-2">
+           Test this out by asking our in-house AI Bitcoin expert {" "}
+            <code>How secure will my Bitcoin be in an Uberrimae Fidei wallet?</code> below.
+          </span>
+        </li>
+        
       </ul>
     </div>
   );
   return (
     <ChatWindow
       endpoint="api/chat"
-      emoji="🏴‍☠️"
-      titleText="Ronald the Bitcoin risk expert"
+      emoji="🏴"
+      titleText="Your Bitcoin Risk Expert"
       placeholder="Ask me how to protect your Bitcoin assets"
       emptyStateComponent={InfoCard}
     ></ChatWindow>
