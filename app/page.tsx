@@ -85,7 +85,7 @@ export default function Home() {
   return (
     <ChatWindow
       endpoint="api/chat"
-      emoji="🏴"
+      emoji="₿"
       titleText="Your Bitcoin Risk Expert"
       placeholder="Ask me how to protect your Bitcoin assets"
       emptyStateComponent={InfoCard}
