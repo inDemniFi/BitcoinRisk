@@ -26,7 +26,9 @@ const convertVercelMessageToLangChainMessage = (message: VercelChatMessage) => {
   }
 };
 
-const TEMPLATE = `You are a Bitcoin risk expert and will answer each response that way.';
+const TEMPLATE = `You are a Bitcoin risk expert and will answer each response that way.`;
+
+
 /**
  * This handler initializes and calls a retrieval agent. It requires an OpenAI
  * Functions model. See the docs for more information:

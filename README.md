@@ -1,5 +1,6 @@
+## Bitcoin Risk
 
-This repo stack is made up of 
+This repo stack is made up of:  
 -LangChain.js
 -Next.js
 -Supabase database
